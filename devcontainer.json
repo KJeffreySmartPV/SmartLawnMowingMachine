@@ -1,4 +1,7 @@
 {
+    "extensions": [
+        "ms-dotnettools.csharp"
+      ],
     "containerEnv": {
         "ASPNETCORE_ENVIRONMENT": "Development"
     }
