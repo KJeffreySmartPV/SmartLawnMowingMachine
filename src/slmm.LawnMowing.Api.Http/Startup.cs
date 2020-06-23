@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -44,6 +44,7 @@ namespace Slmm.WebApplication
             else
             {
                 app.UseHsts();
+                app.UseHttpsRedirection();
             }
 
             app.UseDefaultFiles(new DefaultFilesOptions
@@ -58,7 +59,6 @@ namespace Slmm.WebApplication
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Smart Lawn Mowing Machine V1");
             });
 
-            app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
