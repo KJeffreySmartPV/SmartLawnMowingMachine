@@ -5,5 +5,5 @@
     "containerEnv": {
         "ASPNETCORE_ENVIRONMENT": "Development"
     },
-    "postCreateCommand": "dotnet restore /src",
+    "postCreateCommand": "dotnet restore ./src",
 }
