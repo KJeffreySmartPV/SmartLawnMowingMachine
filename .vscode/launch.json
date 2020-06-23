@@ -1,4 +1,7 @@
 {
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -6,18 +9,12 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}\\Slmm.Mower.Behaviour.Tests\\bin\\Debug\\netcoreapp2.1\\Slmm.Mower.Behaviour.Tests.dll",
+            "program": "${workspaceFolder}/src/slmm.LawnMowing.Api.Http/bin/Debug/netcoreapp2.1/slmm.LawnMowing.Api.Http.dll",
             "args": [],
-            "cwd": "${workspaceRoot}",
-            "externalConsole": false,
+            "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
-            "internalConsoleOptions": "openOnSessionStart"
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach",
-            "processId": "${command.pickProcess}"
+            "console": "internalConsole"
         }
+
     ]
 }
