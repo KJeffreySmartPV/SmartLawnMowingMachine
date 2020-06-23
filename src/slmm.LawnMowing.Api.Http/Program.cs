@@ -14,12 +14,20 @@ namespace Slmm.WebApplication
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var config = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: true)
+            .AddCommandLine(args)
+            .Build();
+
+            CreateWebHostBuilder(args, config).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args, IConfigurationRoot config) =>
+        
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls("http://*:5000")
+                .UseConfiguration(config)
+                .UseUrls("http://0.0.0.0:5000")
                 .UseStartup<Startup>();
     }
 }

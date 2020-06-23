@@ -17,9 +17,9 @@
         public const string MowerOrientationSettingsKeyName = "orientation";
         public const string MowerOrientationSettingsDefaultValue = "East";
         public const string GardenLengthSettingsKeyName = "length";
-        public const int GardenLengthSettingsDefaultValue = 1;
+        public const int GardenLengthSettingsDefaultValue = 5;
         public const string GardenWidthSettingsKeyName = "width";
-        public const int GardenWidthSettingsDefaultValue = 1;
+        public const int GardenWidthSettingsDefaultValue = 5;
         public const string GardenDimentionsSettingsSectionName = "GardenDimentions";
 
         public MowerFactory(ISettingsResolver settingsResolver)
