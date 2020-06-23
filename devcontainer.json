@@ -1,0 +1,5 @@
+{
+    "containerEnv": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+    }
+}
